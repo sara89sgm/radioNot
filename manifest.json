@@ -21,9 +21,18 @@
     "*://*.google.com/",
     "notifications",
     "https://www.bbc.co.uk/*",
-    "http://static.bbci.co.uk/*"
+    "http://static.bbci.co.uk/*",
+    "https://api.live.bbc.co.uk/*"
+
    ],
+
+  "content_scripts": [{
+     "matches": ["http://www.bbc.co.uk/*"],
+          "js": ["require.js","jquery-1.9.1.js","swfobject-2.js","bump-3.js","parse-1.2.18.min.js","insert.js"],
+          "css": ["insert.css"]
+  }],
 
   "version": "4.0",
   "manifest_version": 2
+
 }

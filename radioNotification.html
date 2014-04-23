@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="notifications.css">
   <title>iPlayer Radio Notifications</title>
   <script type="text/javascript" src="require.js"></script>
+   <script type="text/javascript" src="jquery.min.js"></script>
 
 </head>
 <body>
@@ -23,13 +24,14 @@
 
     <div class='nowplaying'></div>
   </div>
-  <div class="stream-smp" data-smp-base="https://www.bbc.co.uk/iplayer/playlist/"></div>
+  <div id="mediaPlayer" class="stream-smp" data-smp-base="https://www.bbc.co.uk/iplayer/playlist/"></div>
   <div class='recent'>
  
   </div>
   <div class='myradio'></div>
   <div class='id_icon'></div>
 </div>
+
   <script type="text/javascript" src="parse-1.2.18.min.js"></script>
   <script type="text/javascript" src="notifications.js"></script>
 </body>

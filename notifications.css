@@ -41,12 +41,19 @@ body {
 	clear: both;
 	margin-bottom: 6px;
 }
-.notification img {
-	max-width: 100px;
+.image {
+	width: 65px;
 	height: 65px;
+	overflow: hidden;
 	float: left;
 	margin-right: 10px;
 	margin-bottom: 8px;
+}
+.notification img {
+	width: auto;
+	height: 100%;
+
+	
 }
 .notification h2 {
 	font-size: 14px;
