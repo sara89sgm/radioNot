@@ -1,0 +1,29 @@
+{
+  "background": {
+    "persistent": false,
+    "page": "background.html"
+  },
+  "browser_action": {
+      "default_title": "iPlayer Radio Notifications",
+      "default_icon": "icon.png",
+      "default_popup": "radioNotification.html"
+  },
+  "default_locale": "en",
+  "description": "Notifications of iPlayer Radio",
+  "icons": {
+    "128": "icon.png"
+  },
+  "name": "iPlayer Radio Notifications",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "webNavigation",
+    "*://*.google.com/",
+    "notifications",
+    "https://www.bbc.co.uk/*",
+    "http://static.bbci.co.uk/*"
+   ],
+
+  "version": "4.0",
+  "manifest_version": 2
+}

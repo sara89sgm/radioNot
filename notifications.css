@@ -1,0 +1,140 @@
+body {
+	color: white;
+	font-family: arial;
+	min-width: 300px;
+	min-height: 550px;
+	-webkit-font-smoothing: antialiased
+
+}
+
+.header {
+	position: absolute;
+	font-size: 20px;
+	top: 12px;
+	left: 50px;
+}
+.playing_panel { 
+	position: absolute;
+	top: 49px;
+	left: 13px;
+	width: 287px;
+	height: 48px;
+	background-image: url("img/playing_panel.png");
+}
+.nowplaying {
+	position: absolute;
+	font-weight: bold;
+	font-size: 16px;
+	top: 23px;
+	left: 8px;
+}
+.recent { 
+	position: absolute;
+	top: 111px;
+	left: 13px;
+	width: 287.25px;
+	height: 28px;
+	background: url("img/recent.png") no-repeat;
+	padding-top: 22px;
+}
+.notification {
+	clear: both;
+	margin-bottom: 6px;
+}
+.notification img {
+	max-width: 100px;
+	height: 65px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+.notification h2 {
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+.notification p {
+	font-size: 12px;
+	margin-top: 0px;
+}
+.myradio { 
+	position: absolute;
+	top: 365px;
+	left: 13px;
+	width: 287.25px;
+	height: 186.208984375px;
+	background-image: url("img/myradio.png");
+}
+.id_icon { 
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	width: 22.5px;
+	height: 22.5px;
+	background-image: url("img/id_icon.png");
+}
+.background { 
+	position: absolute;
+	top: 1px;
+	left: -1px;
+	width: 313px;
+	height: 568px;
+	background: #2c2c2c;
+}
+
+/*Audio playing icon*/
+
+#audioicon{
+	position: absolute;
+    height: 10px;
+    float: left;
+    top:6px;
+    left: 6px;
+	margin-right: 6px;
+}
+.bars{
+    width: 1px; height: 11px;
+    float: left;
+    margin-left: 2px;
+    background-image: -webkit-linear-gradient(top, #888 0%,#888 100%),-webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 0;
+}
+.bars:nth-child(1) {
+    background-position: 0 18px, 0 0;
+    -webkit-animation: ani .6s linear infinite;
+}
+.bars:nth-child(2) {
+    background-position: 0 14px, 0 0;
+    -webkit-animation: ani .7s linear infinite;
+}
+.bars:nth-child(3) {
+    background-position: 0 8px, 0 0;
+    -webkit-animation: ani .6s linear infinite;
+}
+.bars:nth-child(4) {
+    background-position: 0 5px, 0 0;
+    -webkit-animation: ani .8s linear infinite;
+}
+.bars:nth-child(5) {
+    background-position: 0 10px, 0 0;
+    -webkit-animation: ani .55s linear infinite;
+}
+.bars:nth-child(6) {
+    background-position: 0 12px, 0 0;
+    -webkit-animation: ani .7s linear infinite;
+}
+.bars:nth-child(7) {
+    background-position: 0 8px, 0 0;
+    -webkit-animation: ani .6s linear infinite;
+}
+@-webkit-keyframes ani {
+  50%{
+      background-position: 0 0, 0 0;
+  }
+}
+
+.bars_stopped .bars {
+	-webkit-animation: none;
+	background-position: 0 13px, 0 0;
+	transition: 600;
+}
