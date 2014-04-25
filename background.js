@@ -9,6 +9,7 @@ var pollIntervalMax = 5;  // 5 minutes
 var requestTimeout = 1000 * 2;  // 2 seconds
 var rotation = 0;
 var loadingAnimation = new LoadingAnimation();
+var userId = 'd4IWpoGAOv';
 
 // Legacy support for pre-event-pages.
 var oldChromeVersion = !chrome.runtime;
@@ -140,6 +141,7 @@ function getInboxCount(onSuccess, onError) {
     var Notification = Parse.Object.extend("Notification");
     var query = new Parse.Query(Notification);
     query.equalTo("read", false);
+    query.equalTo("userId", userId);
     query.find({
       success: function(results) {
         console.log("Successfully retrieved " + results.length + " notifications.");
